@@ -1,0 +1,6 @@
+Faker
+pandas
+apache-airflow-providers-amazon
+apache-airflow-providers-mysql
+apache-airflow-providers-mongo
+apache-airflow-providers-slack
