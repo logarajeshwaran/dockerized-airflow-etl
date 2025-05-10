@@ -72,6 +72,12 @@ Set up these connections in the Airflow UI under **Admin → Connections**:
 
 ### MySQL
 
+- **Conn Id**: `fs_connection_id`
+- **Conn Type**: `File`
+- **Path**: `/opt/airflow/data/`
+
+### MySQL
+
 - **Conn Id**: `mysql_default`
 - **Conn Type**: `MySQL`
 - **Host**: `mysql`
@@ -152,6 +158,33 @@ Below are some screenshots of the ETL pipeline in action:
 
 ![MinIO Upload](screenshots/minio_upload.png)
 
+### Checking Container Status
+
+Shows the result of `docker-compose ps` with all services running:
+
+![Docker Compose PS](screenshots/docker_compose_ps.png)
+
+
+
+### Viewing Logs
+
+Sample output from `docker-compose logs --tail=20`:
+
+![Docker Compose Logs](screenshots/docker_compose_logs.png)
+
+###  MySQL Table Output
+
+Shows the result of querying the target table after ETL completion:
+
+![MySQL Output](screenshots/mysql_output.png)
+
+
+
+###  MongoDB Collection Output
+
+Shows the result of querying the MongoDB collection after ETL completion:
+
+![MongoDB Output](screenshots/mongodb_output.png)
 
 ---
 
